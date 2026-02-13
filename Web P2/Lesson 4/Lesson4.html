@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Lesson4.js"></script>
+    <title>Lesson 4</title>
+</head>
+<body>
+    <h1>Show how many letters in a word</h1>
+    <input type="text" id="word"  placeholder="Type a word" onblur="findWordsInString()">
+    <div id="length"></div>
+    <div id="wordOutput"></div>
+    <hr>
+    <h1>Show index of each letter in a word</h1>
+    <input type="text" id="word2" placeholder="Type a word" onblur="showIndexOfString()">
+    <div id="allIndex"></div>
+    <hr>
+    <h1 id="title">Where is target?</h1>
+    <p>Searching for a String in a String</p>
+    <br>
+    <div>The string used is:</div>
+    <div id="originalTarget1">The quick brown fox jumps over the lazy dog.</div>
+    <br>
+    <input type="text" id="target" placeholder="Type a target" onblur="findIndexOfWord()">
+    <div id="index"></div>
+    <hr>
+    <h1>String Extraction</h1>
+    <p>Extract some parts from string</p>
+    <input type="text" id="word3"  placeholder="Type a word" onblur="splicingString()">
+    <div id="extracted"></div>
+    <hr>
+    <h1>Show & Hide Array</h1>
+    <button onclick="showArray()">Show</button>
+    <button onclick="hideArray()">Hide</button>
+    <div id="arr"></div>
+    <hr>
+    <h1>Create Empty Array & Add Item into Array</h1>
+    <button onclick="createArray()">Create Array</button>
+    <button onclick="addItem()">Add Item</button>
+    <button onclick="removeItem()">Remove Item</button>
+    <button onclick="addFirstItem()">Add First Item</button>
+    <button onclick="removeFirstItem()">Remove First Item</button>
+    <div id="arrMsg">No array now</div>
+    <div id="arr2"></div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+{% extends 'base.html' %} {% block main %}
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/home">GeekForChild</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+      </div>
+</nav>
+<form method="POST" action="/upload" enctype="multipart/form-data">
+<div class="d-flex justify-content-center m-4">
+    <div class="w-50 h-200">
+        <div class="d-flex justify-content-center column m-4 form-floating">
+            <input type="text" class="form-control text-white border border-secondary" name="Title1" id="Title1" aria-label="Title1" aria-describedby="basic-addon1">
+            <label for="Title2" class="text-white">Title</label>
+        </div>
+        <div class="d-flex justify-content-center column m-4 form-floating">
+            <input type="text" class="form-control text-white border border-secondary" name="Title2" id="Title2" aria-label="Title2" aria-describedby="basic-addon1">
+            <label for="Title2" class="text-white">Short Description:</label>
+        </div>
+        <div class="d-flex justify-content-center column m-4 form-floating">
+            <input type="text" class="form-control text-white border border-secondary" name="Title3" id="Title3" aria-label="Title3" aria-describedby="basic-addon1">
+            <label for="Title3" class="text-white">Catagory:</label>
+        </div>
+        <div class="d-flex justify-content-center column m-4 form-floating">
+            <input type="file" class="form-control text-white border border-secondary" name="Title4" id="Title4" aria-label="Title4" aria-describedby="basic-addon1">
+            <label for="Title4" class="text-white">Cover Picture:</label>
+        </div>
+        <div class="d-flex justify-content-center column m-4 form-floating">
+            <textarea type="text" class="form-control text-white border border-secondary" name="Title5" id="Title5" aria-label="Title5" aria-describedby="basic-addon1"></textarea>
+            <label for="Title5" class="text-white">Content:</label>
+        </div>
+        <div class="d-flex justify-content-center column m-4 form-floating">
+            <button class="btn btn-primary " type="submit" value="submit">
+                Upload
+            </button>
+        </div>
+    </div>
+</div>
+</form>
+{% endblock %}

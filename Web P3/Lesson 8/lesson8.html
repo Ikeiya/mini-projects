@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 8</title>
+    <script src="jquery-3.6.0.min.js"></script> 
+
+</head>
+<form>
+    <div>
+        <h1>Account Registration</h1>
+        <br>
+    </div>
+    <div>
+        <div>Username</div>
+        <input type="text" id="username_l8" name="username" value="11">
+        <br>
+        <br>
+    </div>
+    <div>
+        <div>Password</div>
+        <input type="text" id="password_l8" name="password" value="12">
+        <br>
+        <br>
+    </div>
+    <div>
+        <div>E-mail</div>
+        <input type="text" id="email_l8" name="email" value="13">
+        <br>
+        <br>
+    </div>
+    <div>
+        <button type="button" id="button_l8">Create Account</button>
+        <input type="submit" name="butttttton" value="Submit">
+    </div>
+    <div id="response_l8">
+
+    </div>
+</form>
+</html>
+
+<script>
+    var obj = []
+    var username = ""
+    var password = ""
+    var email = ""
+    $("#button_l8").click(function(){
+        $("#response_l8").text("");
+        username = $("#username_l8").val();
+        password = $("#password_l8").val();
+        email = $("#email_l8").val();
+
+        if  (username.length == 0)    {
+            $("#response_l8").append("Please enter a username");        
+        }   else if  (password.length == 0)    {
+            $("#response_l8").append("Please enter a password");
+        }   else if  (email.length == 0)    {
+            $("#response_l8").append("Please enter a email");
+        }   else    {
+            console.log($(this).serializeArray());
+        }
+    });
+
+    $( "form" ).submit(function( event ) {
+        console.log( JSON.stringify( $( this ).serializeArray() ) );
+        event.preventDefault();
+    });
+</script>

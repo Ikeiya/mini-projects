@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Movie Ticket Confirmation</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Lesson 4 Css.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Details for movie ticket</h1>
+    <details>
+    <form method="POST">
+        <summary>
+        <label>
+            What Movie do you want to watch
+        </label>
+        </summary>
+        <br>
+        <fieldset>
+        <label>Ip Man 4</label>
+        <input type="radio" name="What movie do you want to watch">
+        <br>
+        <label>Fast and Furious</label>
+        <input type="radio" name="What movie do you want to watch">
+        <br>
+        <label>Jungle Cruise</label>
+        <input type="radio" name="What movie do you want to watch"> 
+        </fieldset>
+        <br>
+        <br>
+        <label>Credit Card Number</label>
+        <input type="tel" name="Credit card number" placeholder="">
+        <br>
+        <label>When do you want to watch</label>
+        <input type="date" name="When do you want to watch" placeholder="Date">
+        <br>
+        <label>Guess the time when the movie would play</label>
+        <input type="time" name="Guess the time when the movie would play" placeholder="If you select the corrcet time, you get to watch the movie">
+        <br>
+        <label>How many tickets would you want</label>
+        <label for="How many tickets would you want">How many tickets</label>
+        <select name="How many tickets would you want" id="tickets">
+          <option value="1 ticket">1 ticket</option>
+          <option value="2 ticket">2 ticket</option>
+          <option value="3 ticket">3 ticket</option>
+          <option value="4 ticket">4 ticket</option>
+        </select>
+    </details>
+    <br>
+    <br>
+    <button type="submit" id="submit-button">Submit button</button>
+        <br>
+    </form>
+</body>
+</html>

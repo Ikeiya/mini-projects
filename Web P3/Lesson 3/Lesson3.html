@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.min.js"></script>
+    <title>Lesson 3</title>
+</head>
+<body>
+    <button id="addDiv_l3">Add div after me</button>
+    <br>
+    <button id="beforeDiv_l3">Add a paragraph before me</button>
+    <br>
+    <button id="appendDiv_l3">Add content to div</button>
+    <br>
+    <button id="prependDiv_l3">Add content at beginning of paragraph</button>
+    <br>
+    <button id="removeDiv_l3">Clear all divs</button>
+    <br>
+    <button id="deleteDiv_l3">Remove all after divs</button>
+    <hr>
+    <h2>Introduce .val() & .blur()</h2> <!--text == .innerHTML-->
+    <input type="text" id="valBlur_l3">
+    <hr>
+    <h2>Dynamic elements</h2>
+    <button id="newElement_l3">Add new elements</button>
+    <ul id="list_l3">
+    </ul>
+    <br>
+    <div><button id="highlightFirst_l3">Highlights 1st list item using class</button><button id="highlightLast_l3">Highlight last list item using class</button></div>
+    <hr>
+    <h2>.parent() & .children()</h2>
+    <div id="parent_l3">
+        <h1 id="child_l3">Title</h1>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptas quisquam quod dolorem commodi quo earum distinctio amet numquam facilis?</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptatem iste culpa minima possimus atque?</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque vero consequuntur numquam dolorem excepturi blanditiis!</div>
+    
+    <br>
+    <button id="parentBorder_l3">Add border to my parent</button><button id="children_l3">Underline children in div</button>
+    </div>
+</body>
+<script>
+    $("#addDiv_l3").click(function(){
+        $("#addDiv_l3").after("<div class='newDivs'>After div</div>");
+    });
+
+    $("#beforeDiv_l3").click(function(){
+        $("#beforeDiv_l3").before("<div class='newDivs'>Before div</div>");
+    });
+
+    $("#appendDiv_l3").click(function(){
+        $(".newDivs").append("New words");
+    });
+
+    $("#prependDiv_l3").click(function(){
+        $(".newDivs").prepend("Old words");
+    });
+
+    $("#removeDiv_l3").click(function(){
+        $(".newDivs").remove();
+    });
+
+    $("#deleteDiv_l3").click(function(){
+        $(".newDivs").remove(":contains('After')");
+    });
+
+    $("#valBlur_l3").blur(function(){
+        var text_l3 = $("#valBlur_l3").val();
+        alert(text_l3);
+    });
+
+    $("#newElement_l3").click(function(){
+        $("#list_l3").append("<li class='.new_l3'>new item</li>");
+    });
+
+    $("#list_l3").on("click", "li", function(){
+        $(this).css("color", "green");
+    });
+
+    $("#highlightFirst_l3").click(function(){
+        $("li").first().addClass("highlight_l3");
+    });
+
+    $("#highlightLast_l3").click(function(){
+        $("li").last().addClass("highlight_l3");
+    });
+
+    $("#parentBorder_l3").click(function(){
+        $(this).parent().addClass("parent_l3");
+    });
+
+    $("#children_l3").click(function(){
+        $("#parent_l3").children().css("text-decoration", "underline");
+    });
+</script>
+<style>
+    .highlight_l3{
+        background-color: cyan;
+    }
+
+    .parent_l3{
+        border-style: solid;
+        border-width: 5px;
+    }
+</style>
+</html>

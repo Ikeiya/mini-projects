@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lesson 8</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <script src='Lesson8.js'></script>
+</head>
+<body onload="clearFormLesson8()">
+    <h1>Generate Score Report</h1>
+    <form name="questions" action="#" method="POST">
+        <p>1. Student Name</p>
+        <input type="text" name="name" id="name" onblur="checkValueOfNameLesson8(this.value)" onfocus="highlightLesson8()">
+        <p>2. Subject</p>
+        <input type="radio" name="subject" value="Chinese" onchange="subjectLesson8(this.value)"> Chinese<br>
+        <input type="radio" name="subject" value="English" onchange="subjectLesson8(this.value)"> English<br>
+        <input type="radio" name="subject" value="Maths" onchange="subjectLesson8(this.value)">Maths<br>
+        <br>
+        <img src="" alt="" style="width: 200px;">
+        <p>3. Grade</p>
+        <select name="grade">
+            <option value="default">Select</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="F">F</option>
+        </select>
+        <span>Please select an option!</span>
+        <div id="buttons" style="margin-top: 16px;">
+            <input type="submit" value="Submit Response" onclick="validateAll()">
+            <input type="reset" value="Reset All">
+        </div>
+    </form>
+</body>
+</html>

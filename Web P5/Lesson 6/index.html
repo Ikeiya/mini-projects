@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.min.js"></script>
+    <title>Lesson 6</title>
+</head>
+<body>
+    <div id="div1">pnhtoa</div>
+    <table id="table">
+        
+    </table>
+</body>
+</html>
+<script>
+    var rows = [];
+    $(document).ready(function(){
+        $.ajax({url: "enhanced_sur_covid_19_eng.csv", success: function(result){
+            // $("#div1").html(result);
+            // var temp = String.raw(result);
+            // console.dir(result)
+            const array = result.split("/r/n")
+            for (let i=0; i<array.length; i++){
+                newArray = array[i].split(",")
+                for (let j=0; j<newArray.length; j++){
+                    rows += `<td> ${newArray[j]} </td>,`
+                }
+            }
+            veryNewArray = rows.split(",");
+            console.log(veryNewArray);
+            // for (let i=0; i< veryNewArray.length; i++){
+            //     document.getElementById("table").innerHTML += veryNewArray[i];
+            // }
+        }});
+    })
+</script>

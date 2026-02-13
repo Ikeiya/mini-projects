@@ -1,0 +1,89 @@
+.hearts{
+    width: 50px;
+    height: 50px;
+}
+
+.button{
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    transition-duration: 0.5s;
+    border-radius: 12px;
+    font-size: 20px;
+    box-shadow: 0 9px #666;
+}
+  
+.button:hover {
+    background-color: #555555;
+    color: white;
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+.heart {
+    padding: 0px 100%;
+}
+
+.button:active{
+    transition-duration: 0s;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+#center{
+    padding: 0% 25%;
+    text-align: center;
+}
+
+.guide{
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#guess{
+    width: 100%;
+    height: 40px;
+    color:#555555;
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#response{
+    font-size:20px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#input{
+    width: 90%;
+    height: 40px;
+    color:#555555;
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+#theLastDiv{
+    font-size: 80px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    position: absolute;
+    left: 25px;
+    top: 10px;
+}
+
+#theLoserDiv{
+    font-size: 80px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    position: absolute;
+    left: 25px;
+    top: 10px;
+}

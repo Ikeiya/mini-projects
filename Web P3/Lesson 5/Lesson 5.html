@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.min.js"></script>
+    <title>Lesson 5</title>
+</head>
+<body>
+    <div id="container_l5">
+        <div id="originalPage_l5">
+            <h1>Quiz Room (Math)</h1>
+            <button type="button" id="button_l5">Start</button>
+        </div>
+        <div id="question1_l5">
+            <h1>Quiz Room (Math)</h1>
+            <div>231*106/3 = ?</div>
+            <ul>
+                <li><input type="radio" name="list_l5" value="6142">6142</li>
+                <li><input type="radio" name="list_l5" value="6152">6152</li>
+                <li><input type="radio" name="list_l5" value="7362">7362</li>
+                <li><input type="radio" name="list_l5" value="8162">8162</li>
+                <input type="submit" id="submit_l5" value="Submit">
+                <div id="reply_l5"></div>
+            </ul>
+        </div>
+        <div id="question2_l5">
+            <h1>Quiz Room (Math)</h1>
+            <div>220*709/11</div>
+            <ul>
+                <li><input type="radio" name="list2_l5" value="1418">1418</li>
+                <li><input type="radio" name="list2_l5" value="1428">1428</li>
+                <li><input type="radio" name="list2_l5" value="1438">1438</li>
+                <li><input type="radio" name="list2_l5" value="1448">1448</li>
+                <input type="submit" id="submit2_l5" value="Submit">
+                <div id="reply2_l5"></div>
+            </ul>
+        </div>
+        <div id="question3_l5">
+            <h1>Quiz Room (Math)</h1>
+            <div>spr(172/16+1*133)</div>
+            <ul>
+                <li><input type="radio" name="list3_l5" value="12">12</li>
+                <li><input type="radio" name="list3_l5" value="13">13</li>
+                <li><input type="radio" name="list3_l5" value="14">14</li>
+                <li><input type="radio" name="list3_l5" value="15">15</li>
+                <input type="submit" id="submit3_l5" value="Submit">
+                <div id="reply3_l5"></div>
+            </ul>
+        </div>
+        <div id="endingPage_l5">
+
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    var temp = 0;
+    var counter = 0;
+    $(document).ready(function(){
+        $("#question1_l5").hide();
+        $("#question2_l5").hide();
+        $("#question3_l5").hide();
+        $("#endingPage_l5").hide();
+        $(".submit_l5").hide();
+    });
+
+    $("#button_l5").click(function(){
+        $("#originalPage_l5").hide();
+        $("#question1_l5").show();
+        $(".submit_l5").hide();
+    });
+
+    $("input[name='list_l5']").click(function(){
+        $(".submit_l5").show();
+        temp = $(this).val();
+    });
+
+    $("#submit_l5").click(function(){
+        console.log(temp)
+        if (temp == 8162)   {
+            $("#reply_l5").text("correct");
+            counter += 1;
+        }   else    {
+            $("#reply_l5").text("incorrect");
+        }
+        console.log("new")
+        $("#submit_l5").val("Next");
+        $("#submit_l5").toggleClass("secondClick_l5")
+        
+    });
+
+    $(document).on("click", ".secondClick_l5", function(){
+        console.log("ok")
+        $("#question1_l5").hide();
+        $("#question2_l5").show();
+        $("#submit_l5").hide();
+        $("#submit_l5").removeClass("secondClick_l5")
+    });
+
+    $("input[name='list2_l5']").click(function(){
+        $("#submit2_l5").show();
+        $("#reply2_l5").hide();
+        temp = $(this).val();
+    });
+
+    $("#submit2_l5").click(function(){
+        console.log(temp)
+        if (temp == 1418)   {
+            $("#reply2_l5").text("correct");
+            $("#reply2_l5").show();
+            counter += 1;
+        }   else    {
+            $("#reply2_l5").text("incorrect");
+            $("#reply2_l5").show();
+        }
+        $("#submit2_l5").val("Next");
+        $("#submit2_l5").toggleClass("thridClick_l5")
+    });
+
+    $(document).on("click", ".thridClick_l5", function(){
+        console.log("ok")
+        $("#question2_l5").hide();
+        $("#question3_l5").show();
+        $("#submit2_l5").hide();
+        $("#submit2_l5").removeClass("thridClick_l5")
+    });
+
+    $("input[name='list2_l5']").click(function(){
+        $("#submit3_l5").show();
+        $("#reply3_l5").hide();
+        temp = $(this).val();
+    });
+
+    $("#submit3_l5").click(function(){
+        console.log(temp)
+        if (temp == 1418)   {
+            $("#reply3_l5").text("correct");
+            $("#reply3_l5").show();
+            counter += 1;
+        }   else    {
+            $("#reply3_l5").text("incorrect");
+            $("#reply3_l5").show();
+        }
+        $("#submit3_l5").val("Next");
+        $("#submit3_l5").toggleClass("fourthClick_l5")
+    });
+
+    $(document).on("click", ".thridClick_l5", function(){
+        console.log("ok")
+        $("#question3_l5").hide();
+        $("#endingPage_l5").show();
+        $("#submit3_l5").hide();
+        $("#submit3_l5").removeClass("fourthClick_l5")
+        $("endingPage_l5").text("<p>Your score is </p>"+ counter + "<p>/3</p>")
+    });
+
+</script>
+
+<style>
+    ul{
+        list-style-type: none;
+    }
+</style>

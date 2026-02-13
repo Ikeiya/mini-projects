@@ -1,0 +1,90 @@
+#Thresh, #Q, #W, #e{
+    border-width: 2px;
+    border-style: solid;
+    border-color: green;
+    padding: 10px;
+    
+}
+
+#Q{
+    margin: 100px 50px;
+}
+
+#W{
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+#e{
+    margin: 25px 50px 10px 8px;
+}
+
+#The_Box{
+    margin-top: 30px;
+    padding: 20px 0px 20px 10px;
+    border-width: 5px;
+    border-style: dashed;
+    border-color: green;
+    text-align: center;
+}
+
+#None{
+    display: none;
+}
+
+#inline{
+    display: inline;
+}
+
+#block{
+    display: block;
+}
+
+#inline_block{
+    display: inline-block;
+}
+
+#A{
+    width: 200px;
+}
+
+#B{
+    width: 150px;
+    float: right;
+}
+
+#C, #D, #E{
+    float: left;
+    list-style-type: none;
+    margin-right: 5px
+}
+
+#lorem{
+    border-style: solid;
+    border-color: green;
+    background-color: teal;
+    width: 10%;
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+#AA{
+    height: 100px;
+    border-style: solid;
+    border-color: black;
+    line-height: 100px;
+}
+
+div>h2{
+    color:red;
+}
+
+div+h2{
+    background-color: yellow;
+}
+
+div~h2{
+    font-style: italic;
+}

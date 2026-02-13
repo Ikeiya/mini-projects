@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.min.js"></script> 
+    <title>Lesson 7</title>
+</head>
+<body>
+    <div>
+        <h1>Password Strength Checker</h1>
+        <input type="text" id="text_l7">
+        <button type="button" id="check_l7">Check Password</button>
+        <div id="ans_l7"></div>
+    </div>
+    <table>
+        <tr id="passwordRec_l7">
+
+        </tr>
+        <tr id="savedAns_l7">
+
+        </tr>
+        <br>
+        <br>
+  </table>
+</body>
+</html>
+
+<script>
+    var counter = 0
+    var result1 = true
+    var result2 = true
+    var result3 = true
+    var result4 = true
+    var result5 = true
+    text = ""
+    $("#check_l7").click(function(){
+        counter = 0
+        text = $("#ans_l7").text("");
+        text = $("#text_l7").val();
+        console.log("a")
+        var pattern1 = /[0-9]/
+        var result1 = pattern1.test(text);
+        var pattern2 = /[a-z]/
+        var result2 = pattern2.test(text);
+        var pattern3 = /[!@#$%&]/
+        var result3 = pattern3.test(text);
+        var pattern4 = /.{12,}/
+        var result4 = pattern4.test(text);
+        var pattern5 = /A-Z/
+        var result5 = pattern5.test(text)
+
+        if (result1 == true)  {
+        counter += 1;
+        console.log("a")
+        }
+        if (result2 == true)  {
+            counter += 1;
+            console.log("b")
+        }
+        if (result3 == true)  {
+            counter += 1;
+            console.log("c")
+        }
+        if (result4 == true)   {
+            counter += 1;
+            console.log("d")
+        }
+        if (result5 == true)   {
+            counter += 1;
+            console.log("e")
+        }
+
+        if (counter == 0)   {
+            $("#ans_l7").append("Please enter something to the password");
+        }
+            else if (counter == 1)   {
+            $("#ans_l7").append("The password "+ text +" is weak");
+            $("#passwordRec_l7").append("<td>" + text + "</td>");
+            $("#savedAns_l7").append("<td>the password is weak</td>");
+        }   else if (counter < 4)   {
+            $("#ans_l7").append("The password "+ text +" is moderately strong");
+            $("#passwordRec_l7").append("<td>" + text + "</td>");
+            $("#savedAns_l7").append("<td>the password is moderately strong</td>");
+        }   else    {
+            $("#ans_l7").append("The password "+ text +" is strong");
+            $("#passwordRec_l7").append("<td>" + text + "</td>");
+            $("#savedAns_l7").append("<td>the password is strong</td>");
+        }
+
+    });
+</script>
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>

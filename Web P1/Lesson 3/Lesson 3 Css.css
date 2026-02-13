@@ -1,0 +1,40 @@
+#logo{
+    width: 100px;
+}
+
+#Title{
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+#Subtitle-Main-Line{
+    font-size: 20px;
+    font-family: 'Encode Sans SC', sans-serif;
+}
+
+#Subtitle-Theory{
+    font-size: 20px;
+    font-family: 'Encode Sans SC', sans-serif;
+}
+
+#Subtitle-Game{
+    font-size: 20px;
+    font-family: 'Encode Sans SC', sans-serif;
+}
+
+
+#News{
+    list-style-type:disc;
+}
+
+.Need-to-be-blue{
+    color:blue;
+}
+
+.Need-to-be-blue:hover{
+    text-decoration: underline;
+}

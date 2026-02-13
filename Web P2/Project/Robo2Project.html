@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Robo2Project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <script src="Robo2Project.js"></script>
+    <title>Hangman</title>
+</head>
+<body onload="startPage()">
+    <div id="worldDestruction">
+        <div id="heart">
+            <img src="life.png" class="hearts">
+            <img src="life.png" class="hearts">
+            <img src="life.png" class="hearts">
+            <img src="life.png" class="hearts">
+            <img src="life.png" class="hearts">
+            <img src="life.png" class="hearts">
+            <img src="life.png" class="hearts">
+        </div>
+        <div id="center">
+            <div class="guide">Please enter a list of words from an online dictionary</div>
+            <input type="text" placeholder="Enter words here" id="input">
+            <button class="button" onclick="startGame()">Start Game!</button>
+        </div>
+        <div class="guide">Amount of Letters:</div>
+        <div id="wordLength" class="guide">
+
+        </div>
+        <br>
+        <br>
+        <input type="text" placeholder="Enter only 1 lettered guess here" id="guess" onblur="checkword()">
+        <div id="response"></div>
+    </div>
+    <div id="theLastDiv">
+        You Win
+        <button onclick="reset()" class="button">Reset The Game?</button>
+    </div>
+    <div id="theLoserDiv">
+        You Lose
+        <button onclick="reset()" class="button">Reset The Game?</button>
+    </div>
+</body>
+</html>

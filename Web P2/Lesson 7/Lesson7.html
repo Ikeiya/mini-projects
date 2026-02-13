@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Lesson7.js"></script>
+    <title>Lesson 7</title>
+</head>
+<body onload="lesson7findWindowHeight();lesson7findWindowWidth();lesson7findScreenWidth();lesson7findScreenHeight()">
+    <button type="button" onclick="lesson7OpenNewWindow()">Open New Window</button>
+    <button type="button" onclick="lesson7OpenNewTab()">Open New Tab</button>
+    <button type="button" onclick="lesson7WindowContents()">New Window with Content</button>
+    <div onclick="lesson7closeWindow()">Click me to CLOSE new window</div>
+    <div onclick="lesson7resizeWindow()">Click me to RESIZE new window</div>
+    <br>
+    <div id="innerWindowWidth"></div>
+    <div id="innerWindowHeight"></div>
+    <div id="innerScreenWidth"></div>
+    <div id="innerScreenHeight"></div>
+    <hr>
+    <h1>Change text color of same class's elements (Without using CSS)</h1>
+    <button type="button" onclick="lesson7changeColor()">"color" class</button>
+    <div id="colorElement">Lorem ipsum dolor sit amet <span class="color">consectetur adipisicing</span> elit. Amet soluta autem dignissimos est repellendus odio sed numquam, provident sapiente impedit, id, 
+        illo repellat tenetur fugit sint corporis molestias! Dicta nobis architecto <span class="color">natus sit culpa</span>, et voluptas vel fugiat enim tempora eos molestias reprehender
+        it illum maxime ratione dolor ab. Accusantium, quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque aliquid inventore eius blanditiis,
+        nostrum dicta itaque <span class="color">voluptates vero voluptatibus consectetur</span> sit similique optio hic tenetur dolorum omnis perspiciatis odit ratione nemo quos. Optio la
+        bore debitis aliquam numquam magnam <span class="color">fugit illo, suscipit fuga.</span> Quidem modi culpa quos voluptatibus blanditiis vero reiciendis pariatur laudantium hic fuga
+        fugiat sed, est vel dolorum labore ut molestias consequuntur, deserunt ad consectetur. Cum ex atque minima necessitatibus vero commodi ad sapiente quos
+        neque at. Esse laudantium, delectus tenetur <span class="color">voluptatem iste quas vitae enim in ipsum amet</span>, fugit et, aspernatur quidem maiores fugiat laborum deleniti ex 
+        dignissimos.</div>
+    <hr>
+    <h1>Change list items' bullet type with a click</h1>
+    <button type="button" onclick="lesson7changeListTag()">Change Bullet Type</button>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>Python</li>
+    </ul>
+    <hr>
+    <h1>Carousel</h1>
+    <div>
+        <button type="button" onclick="prevImgLesson8()"><</button>    
+        <button type="button" onclick="conImgLesson8()">></button>
+    </div>
+    <img src="ad1.jpg" alt="ad1">
+</body>
+</html>

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block main %}
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    {% if session['username'] == null %}
+    {% else %}
+    <a class="nav-link d-flex justify-content-end mx-3" href="/createBlog">Create Blog</a>
+    {% endif %}
+    <div class="container-fluid">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+      </div>
+      {% if session['username'] == null %}
+      <a class="nav-link d-flex justify-content-end m-1" href="/register"
+        >Register</a
+      >
+      <a class="nav-link d-flex justify-content-end m-1" href="/login">Login</a>
+      {% else %}
+      <div class="d-flex justify-content-end m-1">
+        Welcome {{ session['username'] }}
+      </div>
+      <a class="nav-link d-flex justify-content-end m-1" href="/logout">Logout</a>
+      {% endif %}
+    </div>
+  </nav>
+  <div class="d-flex justify-content-center m-2" id="title">
+    Philosophy
+  </div>
+{% endblock %}

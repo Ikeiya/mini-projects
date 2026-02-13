@@ -1,0 +1,22 @@
+#e{
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+}
+
+#wheel:hover{
+    fill:ivory;
+}
+
+table, tr, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table{
+    width: 20%;
+}
+
+td{
+    text-align: center;
+}

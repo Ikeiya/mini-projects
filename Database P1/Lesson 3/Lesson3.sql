@@ -1,0 +1,48 @@
+-- CREATE DATABASE IF NOT EXISTS `snacks`;
+--  
+-- USE `snacks`;
+--  
+-- CREATE TABLE `Transfer`(
+-- 	`buyer` VARCHAR(20),
+-- 	`seller` VARCHAR(20) DEFAULT 'SELF',
+--     `date` DATE DEFAULT NULL,
+--     PRIMARY KEY (`seller`)
+-- );
+
+-- DROP TABLE snack_info;
+-- CREATE TABLE `snack_info`(
+-- 	`snack_id` INT AUTO_INCREMENT,
+--     `snack_name` VARCHAR(20) UNIQUE NOT NULL,
+--     `price` DECIMAL(5,1) NOT NULL CHECK (price > 0),
+--     `amount` INT NOT NULL, CHECK(amount > 0),
+--     `owner` VARCHAR(20),
+--      CONSTRAINT idname PRIMARY KEY (`snack_id`, `snack_name`),
+--      CONSTRAINT `seller` FOREIGN KEY (`owner`) REFERENCES Transfer(`seller`)
+-- );
+--  
+-- #CREATE TABLE `snack_info`(
+-- #	`snack_id` INT PRIMARY KEY AUTO_INCREMENT,
+-- #   `snack_name` VARCHAR(20) UNIQUE NOT NULL,
+-- #    `price` DECIMAL(5,1) NOT NULL CHECK (price > 0),
+-- #    `amount` INT NOT NULL, CHECK(amount > 0),
+-- #    `ate` CHAR(2) DEFAULT 'NO',
+-- #    `buy_date` DATE,
+-- #    `owner` VARCHAR(20)
+-- #);
+
+-- INSERT INTO `Transfer` VALUES ('Gary', 'Patrick', 20220614);
+-- INSERT INTO `Transfer` VALUES ('Hello', 'Harry', 20220524);
+-- INSERT INTO `Transfer` VALUES ('joe', 'Gary', 20220602);
+-- INSERT INTO `Transfer` VALUES ('AMY', 'MARY', 20220531);
+-- INSERT INTO `Transfer` VALUES ('MARY', 'AMY', 20220530);
+-- INSERT INTO `Transfer` VALUES ('PETER', 'Hello', 20220530);
+--  
+--  
+-- INSERT INTO `snack_info` VALUES (1, 'Oreo', 26, 1, 'Gary');
+-- INSERT INTO `snack_info` VALUES (2, 'Appolo', 24, 6, 'Harry');
+-- INSERT INTO `snack_info` VALUES (3, 'Ritz' , 23.5, 2 , 'Gary');
+-- INSERT INTO `snack_info` VALUES (4, 'Calbee' , 22.6, 1 ,'Hello');
+-- INSERT INTO `snack_info` VALUES (5, 'Pringles' , 29, 1 ,'Gary');
+-- INSERT INTO `snack_info` VALUES (6, 'Choco_Pie' , 26, 1 ,'Patrick');
+-- INSERT INTO `snack_info` VALUES (7, 'Ice_cream' , 26, 2 , 'Hello');
+

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.min.js"></script> 
+    <title>Lesson 6</title>
+</head>
+<body>
+    <div>
+        <p>Small o only:</p> 
+        <input type="text" id="texto_l6">
+    </div>
+    <div>
+        <p>Both small o & big O: </p>
+        <input type="text" id="textoO_l6">
+    </div>
+    <div>
+        <p>Numbers only: </p>
+        <input type="text" id="textNum_l6">
+    </div>
+    <div>
+        <p>200-499 only:</p>
+        <input type="text" id="textLimiter1_l6">
+    </div>
+    <div>
+        <p>200-400 only: </p>
+        <input type="text" id="textLimiter2_l6">
+    </div>
+    <div>
+        <p>Start with small letter: </p>
+        <input type="text" id="textLowerCase_l6">
+    </div>
+    <div>
+        <p>End with big letter: </p>
+        <input type="text" id="textUpperCase_l6">
+    </div>
+    <hr>
+    <div>
+        <p>Enter a code: </p>
+        <input type="text" id="code_l6">
+        <div id="ans_l6"></div>
+    </div>
+</body>
+</html>
+<script>
+    var code = 0
+    var text = 0
+    var counter1 = 0;
+    $(document).keydown(function(e){
+        code = e.keyCode;
+    });
+
+    $(document).keydown(function(){
+       if (code < 58 && code > 47)  {
+        //    alert("Numbers are not allowed to be used");
+       }
+    });
+
+    $("#texto_l6").blur(function(){
+        text = $("#texto_l6").val();
+        var pattern = /o/g; // /letter/g checks all avaliable g in the text
+        var result = pattern.test(text);
+        if (result == true) {
+            $("#texto_l6").addClass("green_l6");
+            $("#texto_l6").removeClass("red_l6");
+        }   else    {
+            $("#texto_l6").addClass("red_l6");
+            $("#texto_l6").removeClass("green_l6");
+        }
+    });
+
+    $("#textoO_l6").blur(function(){
+        text = $("#textoO_l6").val();
+        var pattern = /[oO]/; //checks any letters in /[]/ , can also use //i (ignores the difference of Uppercase and Lowercase)
+        var result = pattern.test(text);
+        console.log(result)
+        if (result == true) {
+            $("#textoO_l6").addClass("green_l6");
+            $("#textoO_l6").removeClass("red_l6");
+        }   else    {
+            $("#textoO_l6").addClass("red_l6");
+            $("#textoO_l6").removeClass("green_l6");
+        }
+    });
+
+    $("#textNum_l6").blur(function(){
+        text = $("#textNum_l6").val();
+        var pattern = /[^A-z']/
+        var result = pattern.test(text);
+        console.log(result)
+        if (result == true) {
+            $("#textNum_l6").addClass("green_l6");
+            $("#textNum_l6").removeClass("red_l6");
+        }   else    {
+            $("#textNum_l6").addClass("red_l6");
+            $("#textNum_l6").removeClass("green_l6");
+        }
+    });
+
+    $("#textLimiter1_l6").blur(function(){
+        text = $("#textLimiter1_l6").val();
+        var pattern = /[2-4][0-9][0-9]/
+        var result = pattern.test(text);
+        console.log(result)
+        if (result == true && text.length < 4) {
+            $("#textLimiter1_l6").addClass("green_l6");
+            $("#textLimiter1_l6").removeClass("red_l6");
+        }   else    {
+            $("#textLimiter1_l6").addClass("red_l6");
+            $("#textLimiter1_l6").removeClass("green_l6");
+        }
+    });
+
+    $("#textLimiter2_l6").blur(function(){
+        text = $("#textLimiter2_l6").val();
+        var pattern = /[2-3][0-9][0-9]|400/
+        var result = pattern.test(text);
+        console.log(result)
+        if (result == true && text.length < 4) {
+            $("#textLimiter2_l6").addClass("green_l6");
+            $("#textLimiter2_l6").removeClass("red_l6");
+        }   else    {
+            $("#textLimiter2_l6").addClass("red_l6");
+            $("#textLimiter2_l6").removeClass("green_l6");
+        }
+    });
+
+    $("#textLowerCase_l6").blur(function(){
+        text = $("#textLowerCase_l6").val();
+        var pattern = /[a-z]/;
+        var result = pattern.test(text[0]);
+        console.log(text[0])
+        if (result == true) {
+            $("#textLowerCase_l6").addClass("green_l6");
+            $("#textLowerCase_l6").removeClass("red_l6");
+        }   else    {
+            $("#textLowerCase_l6").addClass("red_l6");
+            $("#textLowerCase_l6").removeClass("green_l6");
+        }
+    });
+
+    $("#textUpperCase_l6").blur(function(){
+        text = $("#textUpperCase_l6").val();
+        var pattern = /[A-Z]/;
+        var result = pattern.test(text[0]);
+        console.log(text[0])
+        if (result == true) {
+            $("#textUpperCase_l6").addClass("green_l6");
+            $("#textUpperCase_l6").removeClass("red_l6");
+        }   else    {
+            $("#textUpperCase_l6").addClass("red_l6");
+            $("#textUpperCase_l6").removeClass("green_l6");
+        }
+    });
+
+    $("#code_l6").blur(function(){
+        $("#ans_l6").text("");
+        text = $("#code_l6").val();
+        console.log("a")
+        var pattern1 = /[0-9]/
+        var result1 = pattern1.test(text);
+        var pattern2 = /[A-z]/
+        var result2 = pattern2.test(text);
+        var pattern3 = /[!@#$%&]/
+        var result3 = pattern3.test(text);
+        var pattern4 = /.{8,}/
+        var result4 = pattern4.test(text);
+        if (result1 == false) {
+            $("#ans_l6").append("/ Please enter at least 1 number to the password ");
+            counter1 += 1;
+        }
+
+        if (result2 == false)  {
+            $("#ans_l6").append("/ Please enter at least 1 letter to the password ");
+            counter1 += 1;
+        }   
+        if (result3 == false)  {
+            $("#ans_l6").append("/ Please enter at least 1 special character (!@#$%&) to the password ");
+            counter1 += 1;
+        }   
+        if (result4 == false)  {
+            $("#ans_l6").append("/ The password must at least have a length of 8 ");
+            counter1 += 1;
+        }
+        console.log(counter1)
+        if (counter1 == 0)   {
+            $("#ans_l6").text("Your password is valid");
+        }
+        counter1 = 0;
+    });
+</script>
+
+<style>
+    .red_l6{
+        background-color: red;
+    }
+
+    .green_l6{
+        background-color: green;
+    }
+</style>

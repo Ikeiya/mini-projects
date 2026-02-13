@@ -1,0 +1,67 @@
+{% extends 'base.html' %} {% block main %}
+<div class="d-flex justify-content-center p-4">
+    <form method="POST" action="/login">
+        <label for="username">Enter your Username Here:</label>
+        <input type="text" name="username" value="{{username}}">
+        <button class="btn btn-primary" type="submit" value="signIn" name="signIn">
+            Sign In
+        </button>
+        <button class="btn btn-primary" type="submit" value="signUp" name="signUp">
+            Sign Up
+        </button>
+        {% with messages = get_flashed_messages() %} {% if messages %} {% for
+            message in messages %}
+            <div class="alert alert-danger my-3 mx-auto w-50" role="alert">
+              {{ message }} 
+            </div>
+        {% endfor %} {% endif %} {% endwith %} {% block body %}{% endblock %}
+    </form>
+</div>
+{% if logIn == True %}
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Route</th>
+        <th scope="col">Bound</th>
+        <th scope="col">Service Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for i in userId %}
+      <tr>
+        {% for j in i %}
+        <td>{{ j }}</td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  <br>
+  <br>
+  <br>
+  <table class="table table-sm ">
+    <thead>
+      <tr>
+        <th scope="col">Route</th>
+        <th scope="col">Bound</th>
+        <th scope="col">Service Type</th>
+        <th scope="col">Add Favourite</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for i in table %}
+        <tr>
+          {% for j in i %}
+            <td>
+              {{ j }}
+            </td>
+          {% endfor %}
+            <td>
+              <a class="btn btn-primary" href="/loggedIn/{{ actualUserId, i }}" type="submit" value="favourite" name="favourite">Add Favourite</a>
+            </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% endif %}
+{% endblock %}

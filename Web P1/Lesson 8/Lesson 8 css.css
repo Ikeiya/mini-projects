@@ -1,0 +1,143 @@
+#a{
+    background-color: red;
+    border-width: 2px;
+    height: 100px;
+    width: 150px;
+    border-style: solid;
+    position: absolute;
+    z-index: 2;
+}
+
+#b{
+    background-color: blue;
+    border-width: 2px;
+    height: 100px;
+    width: 150px;
+    border-style: solid;
+    position: absolute;
+    top: 50px;
+    left: 75px;
+    z-index: 4;
+}
+
+#c{
+    background-color: green;
+    border-width: 2px;
+    height: 100px;
+    width: 150px;
+    border-style: solid;
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    z-index: 1;
+}
+
+#d{
+    background-color: yellow;
+    border-width: 2px;
+    height: 100px;
+    width: 150px;
+    border-style: solid;
+    position: absolute;
+    top: 175px;
+    left: 275px;
+    z-index: 3;
+}
+
+#e{
+    color: blue;
+    font-size: 30px;
+}
+#f{
+    width: 100px;
+    float: right;
+}
+
+#g{
+    border-width: 2px;
+    height: auto;
+    width: 1900px;
+    border-style: solid;
+    overflow: auto;
+}
+
+#h{
+    border-width: 2px;
+    height: 200px;
+    width: 500px;
+    border-style: solid;
+    border-color: black;
+    overflow: hidden;
+    position: absolute;
+    top: 500;
+}
+
+#i{
+    border-width: 2px;
+    height: 200px;
+    width: 500px;
+    border-style: solid;
+    border-color: black;
+    overflow: auto;
+    position: absolute;
+    top: 500;
+    left: 550px;
+}
+
+#j{
+    border-width: 2px;
+    height: 200px;
+    width: 500px;
+    border-style: solid;
+    border-color: black;
+    overflow: scroll;
+    position: absolute;
+    top: 500;
+    left: 1100px;
+}
+
+#k{
+    border-width: 2px;
+    height: 200px;
+    width: 500px;
+    border-style: solid;
+    border-color: black;
+    overflow-x: auto;
+    position: absolute;
+    top: 800px;
+}
+
+#l{
+    border-width: 2px;
+    height: 200px;
+    width: 500px;
+    border-style: solid;
+    border-color: black;
+    overflow-y: auto;
+    position: absolute;
+    top: 800px;
+    left: 550px;
+}
+
+#m{
+    width: 300px;
+    position: absolute;
+    top: 1100px;
+    left: 0px;
+}
+
+#n{
+    width: 300px;
+    visibility: hidden;
+    position: absolute;
+    top: 1100px;
+    left: 400px;
+}
+
+#o{
+    width: 300px;
+    display: none; 
+    position: absolute;
+    top: 1100px;
+    left: 800px; 
+}

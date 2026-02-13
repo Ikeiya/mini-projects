@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.min.js"></script>
+    <title>Lesson 1</title>
+</head>
+<body>
+    
+    <h1 id="title_l1">jQuery: The wrie less, do more, javascript library</h1>
+    <p id="default_l1">Empty</p>
+    <button id="button_l1" type="button">click</button>
+    <br>
+    <img src="pic1.jpg" id="pic1_l1">
+    <img src="pic2.jpg" id="pic2_l1">
+    <p id="number_l1">123</p>
+    <br>
+    <p class="animal_l1">animal</p>
+    <p class="animal_l1">animal</p>
+    <p class="animal_l1">animal</p>
+
+    <script>
+        var counter = 0
+        $(document).ready(function(){
+            $("#default_l1").text("2033")
+        });
+        
+        $("#button_l1").click(function(){
+            $("#title_l1").text("Robocode");
+            $("#title_l1").css("color", "#00FF00");
+        });
+        
+        $("img").click(function(){
+            $('img').css("height", $('img').height() / 2);
+        });
+
+        $("img").click(function(){
+            $(this).css("height", $(this).height() / 2); //this directly takes "img"
+        });
+
+        $("#number_l1").mouseover(function(){
+            $(this).text("456");
+        }).mouseout(function() {
+            $(this).text("123");
+        });
+
+        $(".animal_l1").hover(function(){
+            $(this).text("cat");
+            $(this).css("font-size", 30);
+            $(this).css("background-color", "orange");
+        }, function(){
+            $(this).text("animal");
+            $(this).css("font-size", 14);
+            $(this).css("background-color", "white")
+        });
+    </script>
+</body>
+</html>

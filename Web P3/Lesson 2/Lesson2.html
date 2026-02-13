@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.min.js"></script>
+    <title>Lesson 2</title>
+</head>
+<body>
+    <div id="container_l2">
+        <p id="banner_l2">This is a landing page</p>
+        <button id="remove_l2">Remove banner</button>
+        <p id="banner2_l2">Random List</p>
+        <ul id="banner3_l2">
+            <li >a</li>
+            <li>b</li>
+            <li>c</li>
+        </ul>
+        <ul id="banner4_l2">
+            <li class="innerBanner_l2">Whatsapp</li>
+            <li class="innerBanner_l2">Instagram</li>
+            <li class="innerBanner_l2">Discord</li>
+            <li class="innerBanner_l2">Signal</li>
+            <button id="clear_l2">Clear Selction</button>
+        </ul>
+    <br>
+    <button id="dark_l2">Dark mode</button>
+    </div>
+</body>
+
+<script>
+    var counter = true
+    $(document).ready(function(){
+        $("#banner_l2").hide();
+        $("#banner3_l2").hide();
+        $("#banner_l2").fadeIn(3000); //fades in an object
+    });
+
+    $("#remove_l2").click(function(){
+        $("#banner_l2").fadeOut(); //fades out an object
+    });
+
+    $("#banner2_l2").click(function(){
+        $("#banner3_l2").slideToggle(); //toggles to slide up or down
+    });
+
+    $(".innerBanner_l2").click(function(){
+        $(this).toggleClass("highlight_l2"); //toggles to put in class which has border
+    });
+
+    $("#clear_l2").click(function(){
+        $(".innerBanner_l2").removeClass("highlight_l2"); //removes class which has a border
+    });
+
+    $("#dark_l2").click(function(){
+        if(counter == true){
+            $("li").css("color", "white");
+            $("body").css("background-color", "black");
+            counter = false
+        }   else if(counter == false)   {
+            $("li").css("color", "black");
+            $("body").css("background-color", "white");
+            counter = true
+        }
+    });
+</script>
+
+<style>
+    #banner_l2{
+        text-align: center;
+        font-size: 30px;
+        padding: 5% 20%;
+        background-color: turquoise;
+    }
+
+    #banner2_l2{
+        text-align: center;
+        font-size: 30px;
+        padding: 3% 20%;
+        background-color: orangered;
+    }
+
+    #banner3_l2{
+        text-align: center;
+        font-size: 30px;
+        padding: 3% 20%;
+        background-color: orangered;
+    }
+
+    #banner4_l2{
+        list-style-type: none;
+        float: inline-start;
+        color: black;
+        text-decoration: none;
+    }
+
+    .innerBanner_l2{
+        padding: 10px 20px;
+        display: inline-block;
+    }
+
+    .highlight_l2{
+        border-width: 10px;
+        border-style: solid;
+        border-color: black;
+    }
+</style>
+</html>

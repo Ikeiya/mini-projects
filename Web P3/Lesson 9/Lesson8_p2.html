@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.min.js"></script> 
+    <title>Login</title>
+</head>
+<body>
+    <h1>Welcome back!</h1>
+    <br>
+    <div>Username</div>
+    <input type="text" id="username_l8" name="username" value="">
+    <br>
+    <br>
+    <div>Password</div>
+    <input type="text" id="password_l8" name="password" value="">
+    <br>
+    <br>
+    <button type="button" id="button_l8">Login</button>
+    <br>
+    <div id="return_l8"></div>
+</body>
+</html>
+
+<script>
+    $("#button_l8").click(function(){
+        let obj = localStorage.getItem("data");
+        let newObj = JSON.parse(obj);
+        username = $("#username_l8").val();
+        password = $("#password_l8").val();
+        console.log(newObj[username].username)
+        if (username != newObj[username].username){
+            $("#return_l8").text("Password is incorrect")
+        }   else if (password != newObj[username].password)   {
+            $("#return_l8").text("Password is incorrect")
+        }   else    {
+            $("#return_l8").text("Password is correct")
+        }
+    })
+</script>

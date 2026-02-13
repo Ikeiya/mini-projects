@@ -1,0 +1,217 @@
+No.	Subject	Subject_2	Gender	Type	No. Entered	No. Sat	Chinese Version %	Performance - 5**	Performance - 5*+	Performance - 5+	Performance - 4+	Performance - 3+	Performance - 2+	Performance - 1+	Performance - U
+1	Biology		Male	Number	5685	5358		147	530	1222	2587	3911	4832	5191	167
+2	Biology		Male	Percentage			40.7	2.70%	9.90%	22.80%	48.30%	73.00%	90.20%	96.90%	3.10%
+3	Biology		Female	Number	7322	6984		104	486	1313	3077	4955	6294	6761	223
+4	Biology		Female	Percentage			35.1	1.50%	7.00%	18.80%	44.10%	70.90%	90.10%	96.80%	3.20%
+5	Biology		Total	Number	13007	12342		251	1016	2535	5664	8866	11126	11952	390
+6	Biology		Total	Percentage			37.5	2.00%	8.20%	20.50%	45.90%	71.80%	90.10%	96.80%	3.20%
+7	Business-Accounting and Financial Studies	Accounting	Male	Number	3182	2968		47	204	477	1294	2006	2665	2884	84
+8	Business-Accounting and Financial Studies	Accounting	Male	Percentage			38.8	1.60%	6.90%	16.10%	43.60%	67.60%	89.80%	97.20%	2.80%
+9	Business-Accounting and Financial Studies	Accounting	Female	Number	3659	3511		53	207	487	1632	2568	3244	3463	48
+10	Business-Accounting and Financial Studies	Accounting	Female	Percentage			29.7	1.50%	5.90%	13.90%	46.50%	73.10%	92.40%	98.60%	1.40%
+11	Business-Accounting and Financial Studies	Accounting	Total	Number	6841	6479		100	411	964	2926	4574	5909	6347	132
+12	Business-Accounting and Financial Studies	Accounting	Total	Percentage			33.9	1.50%	6.30%	14.90%	45.20%	70.60%	91.20%	98.00%	2.00%
+13	Business-Accounting and Financial Studies	Business Management	Male	Number	1315	1216		6	21	76	319	642	1038	1174	42
+14	Business-Accounting and Financial Studies	Business Management	Male	Percentage			74.8	0.50%	1.70%	6.30%	26.20%	52.80%	85.40%	96.50%	3.50%
+15	Business-Accounting and Financial Studies	Business Management	Female	Number	1403	1346		12	47	104	443	856	1217	1318	28
+16	Business-Accounting and Financial Studies	Business Management	Female	Percentage			72.8	0.90%	3.50%	7.70%	32.90%	63.60%	90.40%	97.90%	2.10%
+17	Business-Accounting and Financial Studies	Business Management	Total	Number	2718	2562		18	68	180	762	1498	2255	2492	70
+18	Business-Accounting and Financial Studies	Business Management	Total	Percentage			73.8	0.70%	2.70%	7.00%	29.70%	58.50%	88.00%	97.30%	2.70%
+19	Chemistry		Male	Number	6813	6424		196	741	1767	3390	4874	5620	6116	308
+20	Chemistry		Male	Percentage			26.1	3.10%	11.50%	27.50%	52.80%	75.90%	87.50%	95.20%	4.80%
+21	Chemistry		Female	Number	5487	5224		117	483	1222	2555	3952	4602	5009	215
+22	Chemistry		Female	Percentage			21.1	2.20%	9.20%	23.40%	48.90%	75.70%	88.10%	95.90%	4.10%
+23	Chemistry		Total	Number	12300	11648		313	1224	2989	5945	8826	10222	11125	523
+24	Chemistry		Total	Percentage			23.9	2.70%	10.50%	25.70%	51.00%	75.80%	87.80%	95.50%	4.50%
+25	Chinese History		Male	Number	2631	2439		26	117	287	841	1538	2128	2319	120
+26	Chinese History		Male	Percentage			-	1.10%	4.80%	11.80%	34.50%	63.10%	87.20%	95.10%	4.90%
+27	Chinese History		Female	Number	3540	3335		50	185	464	1387	2377	3053	3228	107
+28	Chinese History		Female	Percentage			-	1.50%	5.50%	13.90%	41.60%	71.30%	91.50%	96.80%	3.20%
+29	Chinese History		Total	Number	6171	5774		76	302	751	2228	3915	5181	5547	227
+30	Chinese History		Total	Percentage			-	1.30%	5.20%	13.00%	38.60%	67.80%	89.70%	96.10%	3.90%
+31	Chinese Language		Male	Number	23354	22583		106	443	1234	4822	10716	18700	21718	865
+32	Chinese Language		Male	Percentage			-	0.50%	2.00%	5.50%	21.40%	47.50%	82.80%	96.20%	3.80%
+33	Chinese Language		Female	Number	22475	21881		373	1380	3351	9265	15266	20337	21559	322
+34	Chinese Language		Female	Percentage			-	1.70%	6.30%	15.30%	42.30%	69.80%	92.90%	98.50%	1.50%
+35	Chinese Language		Total	Number	45829	44464		479	1823	4585	14087	25982	39037	43277	1187
+36	Chinese Language		Total	Percentage			-	1.10%	4.10%	10.30%	31.70%	58.40%	87.80%	97.30%	2.70%
+37	Chinese Literature		Male	Number	312	292		2	7	28	74	160	242	277	15
+38	Chinese Literature		Male	Percentage			-	0.70%	2.40%	9.60%	25.30%	54.80%	82.90%	94.90%	5.10%
+39	Chinese Literature		Female	Number	1071	1033		17	67	159	404	717	941	1010	23
+40	Chinese Literature		Female	Percentage			-	1.60%	6.50%	15.40%	39.10%	69.40%	91.10%	97.80%	2.20%
+41	Chinese Literature		Total	Number	1383	1325		19	74	187	478	877	1183	1287	38
+42	Chinese Literature		Total	Percentage			-	1.40%	5.60%	14.10%	36.10%	66.20%	89.30%	97.10%	2.90%
+43	Design and Applied Technology		Male	Number	363	338		2	7	14	39	77	208	288	50
+44	Design and Applied Technology		Male	Percentage			95	0.60%	2.10%	4.10%	11.50%	22.80%	61.50%	85.20%	14.80%
+45	Design and Applied Technology		Female	Number	176	170		0	0	0	24	51	118	147	23
+46	Design and Applied Technology		Female	Percentage			91.2	0.00%	0.00%	0.00%	14.10%	30.00%	69.40%	86.50%	13.50%
+47	Design and Applied Technology		Total	Number	539	508		2	7	14	63	128	326	435	73
+48	Design and Applied Technology		Total	Percentage			93.7	0.40%	1.40%	2.80%	12.40%	25.20%	64.20%	85.60%	14.40%
+49	Economics		Male	Number	6020	5626		161	478	1143	2635	3767	4743	5315	311
+50	Economics		Male	Percentage			44.2	2.90%	8.50%	20.30%	46.80%	67.00%	84.30%	94.50%	5.50%
+51	Economics		Female	Number	6223	5981		98	356	998	2769	4095	5215	5705	276
+52	Economics		Female	Percentage			36	1.60%	6.00%	16.70%	46.30%	68.50%	87.20%	95.40%	4.60%
+53	Economics		Total	Number	12243	11607		259	834	2141	5404	7862	9958	11020	587
+54	Economics		Total	Percentage			40	2.20%	7.20%	18.40%	46.60%	67.70%	85.80%	94.90%	5.10%
+55	English Language		Male	Number	24539	23559		177	750	1897	5530	11555	18016	21212	2347
+56	English Language		Male	Percentage			-	0.80%	3.20%	8.10%	23.50%	49.00%	76.50%	90.00%	10.00%
+57	English Language		Female	Number	23877	23163		243	943	2356	6490	12982	19346	22014	1149
+58	English Language		Female	Percentage			-	1.00%	4.10%	10.20%	28.00%	56.00%	83.50%	95.00%	5.00%
+59	English Language		Total	Number	48416	46722		420	1693	4253	12020	24537	37362	43226	3496
+60	English Language		Total	Percentage			-	0.90%	3.60%	9.10%	25.70%	52.50%	80.00%	92.50%	7.50%
+61	Ethics and Religious Studies		Male	Number	385	349		1	8	20	84	201	301	327	22
+62	Ethics and Religious Studies		Male	Percentage			92.6	0.30%	2.30%	5.70%	24.10%	57.60%	86.20%	93.70%	6.30%
+63	Ethics and Religious Studies		Female	Number	410	385		4	18	48	147	290	360	373	12
+64	Ethics and Religious Studies		Female	Percentage			95.3	1.00%	4.70%	12.50%	38.20%	75.30%	93.50%	96.90%	3.10%
+65	Ethics and Religious Studies		Total	Number	795	734		5	26	68	231	491	661	700	34
+66	Ethics and Religious Studies		Total	Percentage			94	0.70%	3.50%	9.30%	31.50%	66.90%	90.10%	95.40%	4.60%
+67	Geography		Male	Number	3664	3481		54	185	434	1301	2199	3047	3382	99
+68	Geography		Male	Percentage			60.5	1.60%	5.30%	12.50%	37.40%	63.20%	87.50%	97.20%	2.80%
+69	Geography		Female	Number	4604	4476		50	221	602	1810	3007	3982	4376	100
+70	Geography		Female	Percentage			48.8	1.10%	4.90%	13.40%	40.40%	67.20%	89.00%	97.80%	2.20%
+71	Geography		Total	Number	8268	7957		104	406	1036	3111	5206	7029	7758	199
+72	Geography		Total	Percentage			53.9	1.30%	5.10%	13.00%	39.10%	65.40%	88.30%	97.50%	2.50%
+73	Health Management and Social Care		Male	Number	281	249		0	2	5	32	86	176	227	22
+74	Health Management and Social Care		Male	Percentage			90.8	0.00%	0.80%	2.00%	12.90%	34.50%	70.70%	91.20%	8.80%
+75	Health Management and Social Care		Female	Number	589	546		3	12	32	114	258	436	515	31
+76	Health Management and Social Care		Female	Percentage			86.4	0.50%	2.20%	5.90%	20.90%	47.30%	79.90%	94.30%	5.70%
+77	Health Management and Social Care		Total	Number	870	795		3	14	37	146	344	612	742	53
+78	Health Management and Social Care		Total	Percentage			87.8	0.40%	1.80%	4.70%	18.40%	43.30%	77.00%	93.30%	6.70%
+79	History		Male	Number	2377	2248		35	137	319	968	1640	2103	2212	36
+80	History		Male	Percentage			69	1.60%	6.10%	14.20%	43.10%	73.00%	93.50%	98.40%	1.60%
+81	History		Female	Number	2832	2726		38	172	432	1409	2164	2583	2708	18
+82	History		Female	Percentage			52.6	1.40%	6.30%	15.80%	51.70%	79.40%	94.80%	99.30%	0.70%
+83	History		Total	Number	5209	4974		73	309	751	2377	3804	4686	4920	54
+84	History		Total	Percentage			60	1.50%	6.20%	15.10%	47.80%	76.50%	94.20%	98.90%	1.10%
+85	Information and Communication Technology		Male	Number	4204	3994		46	176	417	1222	2178	3246	3751	243
+86	Information and Communication Technology		Male	Percentage			59	1.20%	4.40%	10.40%	30.60%	54.50%	81.30%	93.90%	6.10%
+87	Information and Communication Technology		Female	Number	1419	1363		11	46	114	370	707	1080	1269	94
+88	Information and Communication Technology		Female	Percentage			44	0.80%	3.40%	8.40%	27.10%	51.90%	79.20%	93.10%	6.90%
+89	Information and Communication Technology		Total	Number	5623	5357		57	222	531	1592	2885	4326	5020	337
+90	Information and Communication Technology		Total	Percentage			55.2	1.10%	4.10%	9.90%	29.70%	53.90%	80.80%	93.70%	6.30%
+91	Liberal Studies		Male	Number	23228	22634		129	548	1450	6500	13399	19240	21950	684
+92	Liberal Studies		Male	Percentage			86.8	0.60%	2.40%	6.40%	28.70%	59.20%	85.00%	97.00%	3.00%
+93	Liberal Studies		Female	Number	22406	21971		281	1124	2718	9452	16226	20279	21665	306
+94	Liberal Studies		Female	Percentage			79.9	1.30%	5.10%	12.40%	43.00%	73.90%	92.30%	98.60%	1.40%
+95	Liberal Studies		Total	Number	45634	44605		410	1672	4168	15952	29625	39519	43615	990
+96	Liberal Studies		Total	Percentage			83.4	0.90%	3.70%	9.30%	35.80%	66.40%	88.60%	97.80%	2.20%
+97	Literature in English		Male	Number	20	15		0	1	2	5	8	12	13	2
+98	Literature in English		Male	Percentage			-	0.00%	6.70%	13.30%	33.30%	53.30%	80.00%	86.70%	13.30%
+99	Literature in English		Female	Number	236	229		4	18	46	129	193	213	222	7
+100	Literature in English		Female	Percentage			-	1.70%	7.90%	20.10%	56.30%	84.30%	93.00%	96.90%	3.10%
+101	Literature in English		Total	Number	256	244		4	19	48	134	201	225	235	9
+102	Literature in English		Total	Percentage			-	1.60%	7.80%	19.70%	54.90%	82.40%	92.20%	96.30%	3.70%
+103	Mathematics	Compulsory Part	Male	Number	24399	23277		556	1899	4172	9602	13674	18765	21455	1822
+104	Mathematics	Compulsory Part	Male	Percentage			42.5	2.40%	8.20%	17.90%	41.30%	58.70%	80.60%	92.20%	7.80%
+105	Mathematics	Compulsory Part	Female	Number	23173	22345		178	935	2730	8385	12965	18321	20900	1445
+106	Mathematics	Compulsory Part	Female	Percentage			34.7	0.80%	4.20%	12.20%	37.50%	58.00%	82.00%	93.50%	6.50%
+107	Mathematics	Compulsory Part	Total	Number	47572	45622		734	2834	6902	17987	26639	37086	42355	3267
+108	Mathematics	Compulsory Part	Total	Percentage			38.7	1.60%	6.20%	15.10%	39.40%	58.40%	81.30%	92.80%	7.20%
+109	Mathematics	Extended Part (Calculus and Statistics)	Male	Number	1587	1420		49	207	449	787	993	1220	1343	77
+110	Mathematics	Extended Part (Calculus and Statistics)	Male	Percentage			23.5	3.50%	14.60%	31.60%	55.40%	69.90%	85.90%	94.60%	5.40%
+111	Mathematics	Extended Part (Calculus and Statistics)	Female	Number	1058	984		21	106	274	537	715	868	941	43
+112	Mathematics	Extended Part (Calculus and Statistics)	Female	Percentage			16.9	2.10%	10.80%	27.80%	54.60%	72.70%	88.20%	95.60%	4.40%
+113	Mathematics	Extended Part (Calculus and Statistics)	Total	Number	2645	2404		70	313	723	1324	1708	2088	2284	120
+114	Mathematics	Extended Part (Calculus and Statistics)	Total	Percentage			20.8	2.90%	13.00%	30.10%	55.10%	71.00%	86.90%	95.00%	5.00%
+115	Mathematics	Extended Part (Algebra and Calculus)	Male	Number	3549	3225		168	606	1358	2007	2634	2984	3155	70
+116	Mathematics	Extended Part (Algebra and Calculus)	Male	Percentage			15.1	5.20%	18.80%	42.10%	62.20%	81.70%	92.50%	97.80%	2.20%
+117	Mathematics	Extended Part (Algebra and Calculus)	Female	Number	1298	1211		30	133	404	656	956	1121	1191	20
+118	Mathematics	Extended Part (Algebra and Calculus)	Female	Percentage			12.4	2.50%	11.00%	33.40%	54.20%	78.90%	92.60%	98.30%	1.70%
+119	Mathematics	Extended Part (Algebra and Calculus)	Total	Number	4847	4436		198	739	1762	2663	3590	4105	4346	90
+120	Mathematics	Extended Part (Algebra and Calculus)	Total	Percentage			14.4	4.50%	16.70%	39.70%	60.00%	80.90%	92.50%	98.00%	2.00%
+121	Music		Male	Number	62	60		3	9	21	39	55	57	59	1
+122	Music		Male	Percentage			5	5.00%	15.00%	35.00%	65.00%	91.70%	95.00%	98.30%	1.70%
+123	Music		Female	Number	90	87		0	5	12	42	75	84	86	1
+124	Music		Female	Percentage			10.3	0.00%	5.70%	13.80%	48.30%	86.20%	96.60%	98.90%	1.10%
+125	Music		Total	Number	152	147		3	14	33	81	130	141	145	2
+126	Music		Total	Percentage			8.2	2.00%	9.50%	22.40%	55.10%	88.40%	95.90%	98.60%	1.40%
+127	Physical Education		Male	Number	854	825		2	7	17	94	308	560	740	85
+128	Physical Education		Male	Percentage			88.5	0.20%	0.80%	2.10%	11.40%	37.30%	67.90%	89.70%	10.30%
+129	Physical Education		Female	Number	248	236		1	3	13	46	117	180	223	13
+130	Physical Education		Female	Percentage			81.8	0.40%	1.30%	5.50%	19.50%	49.60%	76.30%	94.50%	5.50%
+131	Physical Education		Total	Number	1102	1061		3	10	30	140	425	740	963	98
+132	Physical Education		Total	Percentage			87	0.30%	0.90%	2.80%	13.20%	40.10%	69.70%	90.80%	9.20%
+133	Physics		Male	Number	7234	6724		219	814	1983	3453	4913	6065	6584	140
+134	Physics		Male	Percentage			29.1	3.30%	12.10%	29.50%	51.40%	73.10%	90.20%	97.90%	2.10%
+135	Physics		Female	Number	2812	2642		37	213	613	1209	1859	2374	2591	51
+136	Physics		Female	Percentage			18.8	1.40%	8.10%	23.20%	45.80%	70.40%	89.90%	98.10%	1.90%
+137	Physics		Total	Number	10046	9366		256	1027	2596	4662	6772	8439	9175	191
+138	Physics		Total	Percentage			26.2	2.70%	11.00%	27.70%	49.80%	72.30%	90.10%	98.00%	2.00%
+139	Science	Combined Science (Biology& Chemistry)	Male	Number	104	97		0	0	2	12	24	50	71	26
+140	Science	Combined Science (Biology& Chemistry)	Male	Percentage			100	0.00%	0.00%	2.10%	12.40%	24.70%	51.50%	73.20%	26.80%
+141	Science	Combined Science (Biology& Chemistry)	Female	Number	63	61		0	0	0	5	20	37	48	13
+142	Science	Combined Science (Biology& Chemistry)	Female	Percentage			82	0.00%	0.00%	0.00%	8.20%	32.80%	60.70%	78.70%	21.30%
+143	Science	Combined Science (Biology& Chemistry)	Total	Number	167	158		0	0	2	17	44	87	119	39
+144	Science	Combined Science (Biology& Chemistry)	Total	Percentage			93	0.00%	0.00%	1.30%	10.80%	27.80%	55.10%	75.30%	24.70%
+145	Science	Combined Science (Biology& Physics)	Male	Number	26	25		0	1	1	8	17	23	25	0
+146	Science	Combined Science (Biology& Physics)	Male	Percentage			92	0.00%	4.00%	4.00%	32.00%	68.00%	92.00%	100.00%	0.00%
+147	Science	Combined Science (Biology& Physics)	Female	Number	11	10		0	0	0	2	4	6	7	3
+148	Science	Combined Science (Biology& Physics)	Female	Percentage			70	0.00%	0.00%	0.00%	20.00%	40.00%	60.00%	70.00%	30.00%
+149	Science	Combined Science (Biology& Physics)	Total	Number	37	35		0	1	1	10	21	29	32	3
+150	Science	Combined Science (Biology& Physics)	Total	Percentage			85.7	0.00%	2.90%	2.90%	28.60%	60.00%	82.90%	91.40%	8.60%
+151	Science	Combined Science (Chemistry& Physics)	Male	Number	84	73		0	0	0	15	39	56	66	7
+152	Science	Combined Science (Chemistry& Physics)	Male	Percentage			78.1	0.00%	0.00%	0.00%	20.50%	53.40%	76.70%	90.40%	9.60%
+153	Science	Combined Science (Chemistry& Physics)	Female	Number	34	32		0	0	1	7	14	24	27	5
+154	Science	Combined Science (Chemistry& Physics)	Female	Percentage			78.1	0.00%	0.00%	3.10%	21.90%	43.80%	75.00%	84.40%	15.60%
+155	Science	Combined Science (Chemistry& Physics)	Total	Number	118	105		0	0	1	22	53	80	93	12
+156	Science	Combined Science (Chemistry& Physics)	Total	Percentage			78.1	0.00%	0.00%	1.00%	21.00%	50.50%	76.20%	88.60%	11.40%
+157	Science	Combined Science (Biology)	Male	Number	130	122		1	4	7	25	54	82	103	19
+158	Science	Combined Science (Biology)	Male	Percentage			98.4	0.80%	3.30%	5.70%	20.50%	44.30%	67.20%	84.40%	15.60%
+159	Science	Combined Science (Biology)	Female	Number	74	71		0	0	1	15	29	48	60	11
+160	Science	Combined Science (Biology)	Female	Percentage			80.3	0.00%	0.00%	1.40%	21.10%	40.80%	67.60%	84.50%	15.50%
+161	Science	Combined Science (Biology)	Total	Number	204	193		1	4	8	40	83	130	163	30
+162	Science	Combined Science (Biology)	Total	Percentage			91.7	0.50%	2.10%	4.10%	20.70%	43.00%	67.40%	84.50%	15.50%
+163	Science	Combined Science (Chemistry)	Male	Number	188	169		0	0	1	21	59	97	136	33
+164	Science	Combined Science (Chemistry)	Male	Percentage			90.5	0.00%	0.00%	0.60%	12.40%	34.90%	57.40%	80.50%	19.50%
+165	Science	Combined Science (Chemistry)	Female	Number	97	93		0	0	2	12	37	50	73	20
+166	Science	Combined Science (Chemistry)	Female	Percentage			80.6	0.00%	0.00%	2.20%	12.90%	39.80%	53.80%	78.50%	21.50%
+167	Science	Combined Science (Chemistry)	Total	Number	285	262		0	0	3	33	96	147	209	53
+168	Science	Combined Science (Chemistry)	Total	Percentage			87	0.00%	0.00%	1.10%	12.60%	36.60%	56.10%	79.80%	20.20%
+169	Science	Combined Science (Physics)	Male	Number	110	94		2	3	7	20	52	75	92	2
+170	Science	Combined Science (Physics)	Male	Percentage			80.9	2.10%	3.20%	7.40%	21.30%	55.30%	79.80%	97.90%	2.10%
+171	Science	Combined Science (Physics)	Female	Number	45	42		0	0	1	7	17	27	33	9
+172	Science	Combined Science (Physics)	Female	Percentage			76.2	0.00%	0.00%	2.40%	16.70%	40.50%	64.30%	78.60%	21.40%
+173	Science	Combined Science (Physics)	Total	Number	155	136		2	3	8	27	69	102	125	11
+174	Science	Combined Science (Physics)	Total	Percentage			79.4	1.50%	2.20%	5.90%	19.90%	50.70%	75.00%	91.90%	8.10%
+175	Science	Combined Science	Male	Number	214	195		0	1	3	35	80	129	162	33
+176	Science	Combined Science	Male	Percentage			90.8	0.00%	0.50%	1.50%	17.90%	41.00%	66.20%	83.10%	16.90%
+177	Science	Combined Science	Female	Number	108	103		0	0	1	14	38	67	82	21
+178	Science	Combined Science	Female	Percentage			79.6	0.00%	0.00%	1.00%	13.60%	36.90%	65.00%	79.60%	20.40%
+179	Science	Combined Science	Total	Number	322	298		0	1	4	49	118	196	244	54
+180	Science	Combined Science	Total	Percentage			86.9	0.00%	0.30%	1.30%	16.40%	39.60%	65.80%	81.90%	18.10%
+181	Science	Integrated Science	Male	Number	50	43		0	1	1	7	12	31	40	3
+182	Science	Integrated Science	Male	Percentage			88.4	0.00%	2.30%	2.30%	16.30%	27.90%	72.10%	93.00%	7.00%
+183	Science	Integrated Science	Female	Number	33	31		1	1	3	8	17	27	31	0
+184	Science	Integrated Science	Female	Percentage			74.2	3.20%	3.20%	9.70%	25.80%	54.80%	87.10%	100.00%	0.00%
+185	Science	Integrated Science	Total	Number	83	74		1	2	4	15	29	58	71	3
+186	Science	Integrated Science	Total	Percentage			82.4	1.40%	2.70%	5.40%	20.30%	39.20%	78.40%	95.90%	4.10%
+187	Technology and Living	Food Science and Technology	Male	Number	54	49		0	0	0	2	9	24	41	8
+188	Technology and Living	Food Science and Technology	Male	Percentage			83.7	0.00%	0.00%	0.00%	4.10%	18.40%	49.00%	83.70%	16.30%
+189	Technology and Living	Food Science and Technology	Female	Number	122	117		1	4	8	34	72	105	115	2
+190	Technology and Living	Food Science and Technology	Female	Percentage			44.4	0.90%	3.40%	6.80%	29.10%	61.50%	89.70%	98.30%	1.70%
+191	Technology and Living	Food Science and Technology	Total	Number	176	166		1	4	8	36	81	129	156	10
+192	Technology and Living	Food Science and Technology	Total	Percentage			56	0.60%	2.40%	4.80%	21.70%	48.80%	77.70%	94.00%	6.00%
+193	Technology and Living	"Fashion, Clothing and Textiles"	Male	Number	17	12		0	0	0	0	1	3	5	7
+194	Technology and Living	"Fashion, Clothing and Textiles"	Male	Percentage			100	0.00%	0.00%	0.00%	0.00%	8.30%	25.00%	41.70%	58.30%
+195	Technology and Living	"Fashion, Clothing and Textiles"	Female	Number	40	35		0	1	2	11	20	29	32	3
+196	Technology and Living	"Fashion, Clothing and Textiles"	Female	Percentage			82.9	0.00%	2.90%	5.70%	31.40%	57.10%	82.90%	91.40%	8.60%
+197	Technology and Living	"Fashion, Clothing and Textiles"	Total	Number	57	47		0	1	2	11	21	32	37	10
+198	Technology and Living	"Fashion, Clothing and Textiles"	Total	Percentage			87.2	0.00%	2.10%	4.30%	23.40%	44.70%	68.10%	78.70%	21.30%
+199	Tourism and Hospitality Studies		Male	Number	1456	1307		5	13	39	138	380	905	1151	156
+200	Tourism and Hospitality Studies		Male	Percentage			88.4	0.40%	1.00%	3.00%	10.60%	29.10%	69.20%	88.10%	11.90%
+201	Tourism and Hospitality Studies		Female	Number	2077	1949		10	51	121	361	811	1557	1843	106
+202	Tourism and Hospitality Studies		Female	Percentage			85.8	0.50%	2.60%	6.20%	18.50%	41.60%	79.90%	94.60%	5.40%
+203	Tourism and Hospitality Studies		Total	Number	3533	3256		15	64	160	499	1191	2462	2994	262
+204	Tourism and Hospitality Studies		Total	Percentage			86.9	0.50%	2.00%	4.90%	15.30%	36.60%	75.60%	92.00%	8.00%
+205	Visual Arts		Male	Number	927	875		4	14	37	115	295	640	792	83
+206	Visual Arts		Male	Percentage			86.4	0.50%	1.60%	4.20%	13.10%	33.70%	73.10%	90.50%	9.50%
+207	Visual Arts		Female	Number	2535	2470		18	71	178	665	1381	2188	2407	63
+208	Visual Arts		Female	Percentage			82.8	0.70%	2.90%	7.20%	26.90%	55.90%	88.60%	97.40%	2.60%
+209	Visual Arts		Total	Number	3462	3345		22	85	215	780	1676	2828	3199	146
+210	Visual Arts		Total	Percentage			83.7	0.70%	2.50%	6.40%	23.30%	50.10%	84.50%	95.60%	4.40%
+211	All Category A subjects#		Male	Number	143640	137191		1993	7254	17203	45170	78730	113543	129435	7756
+212	All Category A subjects#		Male	Percentage			56.3	1.50%	5.30%	12.50%	32.90%	57.40%	82.80%	94.30%	5.70%
+213	All Category A subjects#		Female	Number	138967	134354		1722	7098	18185	52268	88031	118246	129667	4687
+214	All Category A subjects#		Female	Percentage			50.6	1.30%	5.30%	13.50%	38.90%	65.50%	88.00%	96.50%	3.50%
+215	All Category A subjects#		Total	Number	282607	271545		3715	14352	35388	97438	166761	231789	259102	12443
+216	All Category A subjects#		Total	Percentage			53.5	1.40%	5.30%	13.00%	35.90%	61.40%	85.40%	95.40%	4.60%

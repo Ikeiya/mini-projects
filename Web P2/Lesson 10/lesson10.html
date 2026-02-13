@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          width: 25%;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='lesson10.js'></script>
+    <title>Lesson 10</title>
+</head>
+<body onload="initLesson10()">
+    <h1>Current Date & Time</h1>
+    <div id="current"></div>
+    <hr>
+    <h1>Get Date Info</h1>
+    <span>Year: </span><span id="yearLesson10"></span>
+    <br>
+    <span>Month: </span><span id="monthLesson10"></span>
+    <br>
+    <span>Day: </span><span id="dayLesson10"></span>
+    <br>
+    <span>Hour: </span><span id="hourLesson10"></span>
+    <br>
+    <span>Minute: </span><span id="minuteLesson10"></span>
+    <br>
+    <span>Second: </span><span id="secondLesson10"></span>
+    <br>
+    <hr>
+    <h1>Find the Date of 10 Days Later</h1>
+    <button onclick="getDateOf10Days()">Ten days Later</button>
+    <div id="afterTenDays">10 Days Later = </div>
+    <hr>
+    <h1>Find Date Difference between 2 Date Objects</h1>
+    <span>1st Date: </span><input type="date" id="date1">
+    <span>2nd Date: </span><input type="date" id="date2" onblur="datediff()">
+    <div id="dateChange"></div>
+    <hr>
+    <h1>Birthday Record</h1>
+    <input type="text" id="nameLesson10" placeholder="Enter Name"><span>Enter birthday: </span><input type="date" id="birthdayLesson10" placeholder="Enter birthday"><button onclick="createRecordTable()">Save</button>
+    <table id="tableLesson10">
+        <tr>
+            <th>Name</th>
+            <th>Birthday</th>
+            <th>Gift</th>
+        </tr>
+    </table>
+</body>
+</html>

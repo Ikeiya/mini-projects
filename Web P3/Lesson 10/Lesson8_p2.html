@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.min.js"></script> 
+    <title>Login</title>
+</head>
+<body>
+    <h1>Welcome back!</h1>
+    <br>
+    <div>Username</div>
+    <input type="text" id="username_l8" name="username" value="">
+    <br>
+    <br>
+    <div>Password</div>
+    <input type="text" id="password_l8" name="password" value="">
+    <br>
+    <br>
+    <input type="checkbox" id="rmb_l8">Remember Me
+    <br>
+    <br>
+    <button type="button" id="button_l8">Login</button>
+    <button type="button" id="button_l82">Clear Memory</button>
+    <br>
+    <div id="return_l8"></div>
+    <table id="login_detail_l8">
+        <tr>
+            <td>Username</td>
+            <td>Password</td>
+            <td>Email</td>
+        </tr>
+        <tr>
+            <td id="usernamei_l8"></td>
+            <td id="passwordi_l8"></td>
+            <td id="emaili_l8"></td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<script>
+    var condition = JSON.parse(localStorage.getItem("condition"));
+    let obj = localStorage.getItem("data");
+    let newObj = JSON.parse(obj);
+    console.log(Object.values(newObj)[0]);
+    $(document).ready(function(){
+        let obj = localStorage.getItem("data");
+        let newObj = JSON.parse(obj);
+        if(condition["status"]["default_remember_l8"] == true){
+            $("#username_l8").val(Object.values(newObj)[0]["username"]);
+            $("#password_l8").val(Object.values(newObj)[0]["password"]);
+        }
+    });
+
+    $("#button_l8").click(function(){
+        let obj = localStorage.getItem("data");
+        let newObj = JSON.parse(obj);
+        condition = {};
+        username = $("#username_l8").val();
+        password = $("#password_l8").val();
+        if ($('#rmb_l8').prop('checked') == true) {
+            condition["status"] = {"default_remember_l8": true};
+            result = JSON.stringify(condition);
+            localStorage.setItem("condition", result);  
+        }
+        if (username != newObj[username].username){
+            $("#return_l8").text("Password is incorrect")
+        }   else if (password != newObj[username].password)   {
+            $("#return_l8").text("Password is incorrect")
+        }   else    {
+            $("#return_l8").text("Password is correct")
+            $("#usernamei_l8").text(newObj[username].username);
+            $("#passwordi_l8").text(newObj[username].password);
+            $("#emaili_l8").text(newObj[username].email);
+            $("#login_detail_l8").show();
+        }
+    });
+
+    $("#button_l82").click(function(){
+        localStorage.clear();
+        alert("Clear!");
+    })
+</script>

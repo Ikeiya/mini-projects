@@ -1,0 +1,14 @@
+If you're reading this, you're probably looking for the "famous" hidden files of the mini-game. 
+Or maybe you just like to snoop around the game's files.
+
+Anyway, if you're having too much trouble with the mini-game, here are the three 
+directories where the files will be located :
+
+- Documents Folder
+- Desktop
+- Musics Folder
+
+Now it's your turn. 
+You should be able to do it easily.
+
+-NayTeeGames

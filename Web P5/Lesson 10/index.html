@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dashboard - NiceAdmin Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+  <script src="jquery-3.6.0.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/jszip-2.5.0/dt-1.13.1/af-2.5.1/b-2.3.3/b-colvis-2.3.3/b-html5-2.3.3/b-print-2.3.3/cr-1.6.1/date-1.2.0/fc-4.2.1/fh-3.3.1/kt-2.8.0/r-2.4.0/rg-1.3.0/rr-1.3.1/sc-2.0.7/sb-1.4.0/sp-2.1.0/sl-1.5.0/sr-1.2.0/datatables.min.css"/>
+ 
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/jszip-2.5.0/dt-1.13.1/af-2.5.1/b-2.3.3/b-colvis-2.3.3/b-html5-2.3.3/b-print-2.3.3/cr-1.6.1/date-1.2.0/fc-4.2.1/fh-3.3.1/kt-2.8.0/r-2.4.0/rg-1.3.0/rr-1.3.1/sc-2.0.7/sb-1.4.0/sp-2.1.0/sl-1.5.0/sr-1.2.0/datatables.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block">NiceAdmin</span>
+      </a>
+    </div><!-- End Logo -->
+
+  </header><!-- End Header -->
+
+
+  <main id="main" class="main">
+    <div class="d-flex flex-column">
+      <div class=".flex-column">
+
+        <section class="section">
+          <div class="row">
+
+            <!-- Left side columns -->
+            <div class="col-lg-12">
+              <div class="row">
+
+                <!-- Sales Card -->
+                <div class="col-xxl-6 col-md-6">
+                  <div class="card info-card sales-card">
+                    <div class="card-body">
+                      <h5 class="card-title">Total Pokemon</h5>
+                      <div class="d-flex align-items-end">
+                        <i class="bi bi-award" style="font-size: 2rem; color: cornflowerblue; background: #c1e0ff; padding:11px; border-radius: 50%; width: 70px; height: 70px; text-align: center; vertical-align: middle;" ></i>
+                        <h3 id="totalPokemon" style="margin-bottom: 1rem; margin-left: 1rem;"></h3>
+                      </div>
+                    </div>
+
+                  </div>
+                </div><!-- End Sales Card -->
+
+                <!-- Revenue Card -->
+                <div class="col-xxl-6 col-md-6">
+                  <div class="card info-card revenue-card">
+                    <div class="card-body">
+                      <h5 class="card-title">Pokemon Highest Score</h5>
+                      <div class="d-flex align-items-center">
+                        <i class="bi bi-currency-dollar" style="font-size: 2rem; color: rgb(45, 202, 45); background: #c2ebc9; padding:11px; border-radius: 50%; width: 70px; height: 70px; text-align: center; vertical-align: middle;"></i>
+                        <div class="d-flex flex-column" style="margin-top: 1rem; margin-left: 1rem;">
+                          <h3 id="highestScore"></h3>
+                          <p id="highestPokemon"></p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div><!-- End Revenue Card -->
+      </div>
+      <div class="d-flex">
+
+        <div class="card info-card flex-fill customers-card">
+          <div class="card-body">
+            <h5 class="card-title">Pokemon Lowest Score</h5>
+            <div class="d-flex align-items-center">
+              <i class="bi bi-people" style="font-size: 2rem; color: rgb(255, 200, 0); background: #fae7a5; padding:11px; border-radius: 50%; width: 70px; height: 70px; text-align: center; vertical-align: middle;"></i>
+              <div class="d-flex flex-column" style="margin-top: 1rem; margin-left: 1rem;">
+                <h3 id="lowestScore"></h3>
+                <p id="lowestPokemon"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-row mb-2 gap-4">
+                <!-- Reports -->
+              <div class="card flex-fill vh-100">
+                <div class="card-body">
+                  <h5 class="card-title">PokeGen/Average</h5>
+                </div>
+              </div>
+      
+
+              <!-- News & Updates Traffic -->
+              <div class="card flex-fill">
+                <div class="card-body pb-0">
+                  <h5 class="card-title">Pokemon Value</h5>
+                </div>
+              </div><!-- End News & Updates -->
+
+            </div><!-- End Right side columns -->
+      </div>
+      <div class="d-flex flex-row">
+        <div class="card flex-fill">
+          <div class="card-body pb-0">
+            <h5 class="card-title">Pokemon List</h5>
+            <table id="pokemonList"></table>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.min.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    newArray = []
+    largest = 0
+    index1 = 0
+    lowest = 1000
+    index2 = 0
+    columns = []
+    rows = [] 
+    $(document).ready(function(){
+      $.ajax({
+        url: "pokemon.csv",
+        success: function(result){
+          const array2 = result.split("\n");
+          $("#totalPokemon").text(array2.length-2);
+          const array = result.split("\r\n")
+          for (let i=0; i<array.length; i++){
+            newArray.push(array[i].split(","));
+          }
+          for (let i=1; i<newArray.length-1; i++){
+            if (newArray[i][4] > largest){
+              largest = newArray[i][4]
+              index1 = i
+            }
+            $("#highestScore").text(largest);
+            $("#highestPokemon").text(newArray[index1][1]);
+          }
+          for (let i=1; i<newArray.length-1; i++){
+            if (newArray[i][4] < lowest){
+              lowest = newArray[i][4]
+              index2 = i
+            }
+          }
+            $("#lowestScore").text(lowest);
+            $("#lowestPokemon").text(newArray[index2][1]);
+            const temp = array[0].split(",");
+            // console.log(temp);
+            for (let i = 0; i < temp.length; i++) {
+              columns.push(`<th>${temp[i]}</th>`);
+            }
+            console.log(columns)
+            $("#pokemonList").append(`<thead><tr>${columns}</tr></thead>`);
+            for (let i = 1; i < array.length - 1; i++) {
+              columns = [];
+              newArray = array[i].split(",");
+              rows.push(newArray);
+            }
+            $("#pokemonList").dataTable({
+            data: rows,
+            dom: "<'d-flex gap-4'<P><'w-200'<'d-flex justify-content-between'f><t><'d-flex flex-row justify-content-between align-items-center'l<'mt-n1'i>p>>>",
+          });
+        }
+      })
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <title>Lesson 4</title>
+</head>
+<body>
+    <div id="margin_l4">
+        <div id="text_l4">To do list</div>
+        <input type="text" placeholder="Enter Task" id="input_l4">
+        <button id="button_l4">+</button>
+        <ul id="tasks_l4">
+            
+        </ul>
+    </div>
+</body>
+</html>
+
+<script>
+    $("#button_l4").click(function(){
+        var task = $("#input_l4").val();
+        $("#tasks_l4").append("<li class='newItem_l4'><input type='checkbox' class='check_l4'>" + task + "</li>");
+    });
+    
+    $(document).on("click", ".check_l4", function(){
+        console.log("a")
+        $(this).parent().fadeOut(500);
+    });
+</script>
+
+<style>
+    html{
+        font-size: 16px;
+    }
+    body{
+        background: url("pic1.jpg") no-repeat;
+        background-size: 100%;
+        background-size: cover;
+    }
+
+    #margin_l4{
+        margin-top: 10%;
+        text-align: center;
+        font-family: 'Dongle', sans-serif;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 2rem;
+	    display: grid;
+	    place-items: center;
+	    border: 8px solid;
+	    margin: 0px 50px;
+        border-image: linear-gradient(45deg, turquoise, greenyellow) 1;
+    }
+
+    #text_l4{
+        text-align: center;
+    }
+    
+    .newItem_l4{
+        background-color: cyan;
+        border: 2px solid cyan;
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin: 10px auto;
+        text-align: left;
+    }
+
+    #tasks_l4{
+        list-style: none;
+    }
+</style>

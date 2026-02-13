@@ -1,0 +1,63 @@
+h1{
+    font-family: 'Encode Sans SC', sans-serif;
+    font-size: 30px;
+}
+
+body{
+    background-color: honeydew;
+}
+
+#photo{
+    width:250px;
+}
+
+#photo:hover{
+    width:300px;
+    transition: 0.5s;
+}
+
+span{
+    font-family: 'Nunito', sans-serif;
+}
+
+#p1{
+    color:cadetblue;
+}
+
+#p1:active{
+    font-weight: bold;
+    transition:0.5s;
+}
+
+#p2{
+    color:darkgreen;
+}
+
+#p2:active{
+    font-weight: bold;
+    transition:0.5s;
+}
+
+#p3{
+    color:darkslategray;
+}
+
+#p3:active{
+    font-weight: bold;
+    transition:0.5s;
+}
+
+#description{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 12px;
+}
+
+#logo{
+    width: 50px;
+    float: right;
+}
+
+
+#Fide{
+    width: 50px;
+}

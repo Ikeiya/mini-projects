@@ -1,0 +1,33 @@
+{% extends 'base.html' %} {% block main %}
+<div class="d-flex justify-content-center p-4">
+    <form method="POST" action="/login">
+        <label for="username">Enter your Username Here:</label>
+        <input type="text" name="username" value="{{username}}">
+        <button class="btn btn-primary" type="submit" value="signIn" name="signIn">
+            Sign In
+        </button>
+        <button class="btn btn-primary" type="submit" value="signUp" name="signUp">
+            Sign Up
+        </button>
+        {% with messages = get_flashed_messages() %} {% if messages %} {% for
+            message in messages %}
+            <div class="alert alert-danger my-3 mx-auto w-50" role="alert">
+              {{ message }}
+            </div>
+        {% endfor %} {% endif %} {% endwith %} {% block body %}{% endblock %}
+    </form>
+</div>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Bound</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+    </tr>
+    </tbody>
+  </table>
+{% endblock %}
